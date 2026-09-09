@@ -1,0 +1,896 @@
+{
+  "generated_utc": "2026-09-09T02:35:38.801758+00:00",
+  "study": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907",
+  "artifact_completion_verified": true,
+  "model_gate": {
+    "gates": {
+      "strfe": {
+        "count_simultaneous_ci_pass": true,
+        "all_seed_mae_pass": true,
+        "scene_win_fraction": 0.8636363636363636,
+        "pressure_mae_delta": -0.02441537519446527,
+        "pressure_macro_f1_delta": -0.001650644892811982,
+        "seed_checks": [
+          {
+            "seed": 23037,
+            "metric": "zone_count_mae",
+            "delta": -8.12802470814098
+          },
+          {
+            "seed": 23037,
+            "metric": "total_count_mae",
+            "delta": -92.45351222789648
+          },
+          {
+            "seed": 23038,
+            "metric": "zone_count_mae",
+            "delta": -8.248998020634506
+          },
+          {
+            "seed": 23038,
+            "metric": "total_count_mae",
+            "delta": -92.38622756437822
+          },
+          {
+            "seed": 23039,
+            "metric": "zone_count_mae",
+            "delta": -7.930192362178456
+          },
+          {
+            "seed": 23039,
+            "metric": "total_count_mae",
+            "delta": -93.32161316727147
+          }
+        ],
+        "pass": false
+      },
+      "strfe_graph": {
+        "count_simultaneous_ci_pass": true,
+        "all_seed_mae_pass": true,
+        "scene_win_fraction": 0.9090909090909091,
+        "pressure_mae_delta": -0.024223007449899057,
+        "pressure_macro_f1_delta": -0.0189680178106766,
+        "seed_checks": [
+          {
+            "seed": 23037,
+            "metric": "zone_count_mae",
+            "delta": -8.047436161474748
+          },
+          {
+            "seed": 23037,
+            "metric": "total_count_mae",
+            "delta": -90.62772382389416
+          },
+          {
+            "seed": 23038,
+            "metric": "zone_count_mae",
+            "delta": -7.993221680323283
+          },
+          {
+            "seed": 23038,
+            "metric": "total_count_mae",
+            "delta": -90.58775500095251
+          },
+          {
+            "seed": 23039,
+            "metric": "zone_count_mae",
+            "delta": -7.921555938142719
+          },
+          {
+            "seed": 23039,
+            "metric": "total_count_mae",
+            "delta": -90.96441823785955
+          }
+        ],
+        "pass": false
+      }
+    },
+    "decision": "Retain persistence; revise architecture/task before calibration or publication claims",
+    "strfe_only_alternative": false,
+    "independent_test_sequences": [
+      "007",
+      "008",
+      "016",
+      "020",
+      "022",
+      "029",
+      "031",
+      "034",
+      "054",
+      "060",
+      "065",
+      "073",
+      "076",
+      "085",
+      "087",
+      "089",
+      "095",
+      "096",
+      "101",
+      "106",
+      "108",
+      "112"
+    ],
+    "test_checkpoint_seal": "860578b79b8ae7cf3f3de6415dc1befb1a3641288399ac1acfcee034d29174ee",
+    "pressure_semantics": "derived proxy, not emergency ground truth"
+  },
+  "submission_readiness": "NOT ESTABLISHED: artifact verification cannot establish novelty or external validity",
+  "audit_scope": "Stored hashes, sequence inventory, sealed checkpoints, saved epoch counts and output completeness. Does not independently verify training execution, rehash raw data or recalculate statistics; does not certify location independence or pretraining provenance.",
+  "checks": [
+    {
+      "check": "protocol fingerprint",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\protocol.json"
+    },
+    {
+      "check": "supplied DDPF fingerprint",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\models\\balanced_ddpf.pt"
+    },
+    {
+      "check": "full training protocol",
+      "pass": true,
+      "detail": "Frozen 40-epoch budgets, 12-epoch minimum and three seeds"
+    },
+    {
+      "check": "sequence separation",
+      "pass": true,
+      "detail": "Train/validation/test sequence IDs must not overlap"
+    },
+    {
+      "check": "split sizes",
+      "pass": true,
+      "detail": "Expected 68/22/22 unique sequences"
+    },
+    {
+      "check": "development exposure excluded",
+      "pass": true,
+      "detail": "Known exposed sequences cannot enter validation/test"
+    },
+    {
+      "check": "complete inventory",
+      "pass": true,
+      "detail": "Expected 112 sequences and 33,600 inventoried frames"
+    },
+    {
+      "check": "inventory consistency",
+      "pass": true,
+      "detail": "Invalid entries: 0"
+    },
+    {
+      "check": "inventoried image overlap",
+      "pass": true,
+      "detail": "Cross-partition hash collisions: 0; raw images are not rehashed by this audit"
+    },
+    {
+      "check": "current source: research\\cache.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\research\\cache.py"
+    },
+    {
+      "check": "source snapshot: research\\cache.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\research\\cache.py"
+    },
+    {
+      "check": "current source: research\\evaluation.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\research\\evaluation.py"
+    },
+    {
+      "check": "source snapshot: research\\evaluation.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\research\\evaluation.py"
+    },
+    {
+      "check": "current source: research\\metrics.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\research\\metrics.py"
+    },
+    {
+      "check": "source snapshot: research\\metrics.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\research\\metrics.py"
+    },
+    {
+      "check": "current source: research\\protocol.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\research\\protocol.py"
+    },
+    {
+      "check": "source snapshot: research\\protocol.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\research\\protocol.py"
+    },
+    {
+      "check": "current source: research\\report.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\research\\report.py"
+    },
+    {
+      "check": "source snapshot: research\\report.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\research\\report.py"
+    },
+    {
+      "check": "current source: research\\run.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\research\\run.py"
+    },
+    {
+      "check": "source snapshot: research\\run.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\research\\run.py"
+    },
+    {
+      "check": "current source: research\\training.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\research\\training.py"
+    },
+    {
+      "check": "source snapshot: research\\training.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\research\\training.py"
+    },
+    {
+      "check": "current source: research\\__init__.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\research\\__init__.py"
+    },
+    {
+      "check": "source snapshot: research\\__init__.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\research\\__init__.py"
+    },
+    {
+      "check": "current source: crowd_twin\\models\\digital_twin.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\crowd_twin\\models\\digital_twin.py"
+    },
+    {
+      "check": "source snapshot: crowd_twin\\models\\digital_twin.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\crowd_twin\\models\\digital_twin.py"
+    },
+    {
+      "check": "current source: crowd_twin\\models\\factory.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\crowd_twin\\models\\factory.py"
+    },
+    {
+      "check": "source snapshot: crowd_twin\\models\\factory.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\crowd_twin\\models\\factory.py"
+    },
+    {
+      "check": "current source: crowd_twin\\models\\graph_reasoner.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\crowd_twin\\models\\graph_reasoner.py"
+    },
+    {
+      "check": "source snapshot: crowd_twin\\models\\graph_reasoner.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\crowd_twin\\models\\graph_reasoner.py"
+    },
+    {
+      "check": "current source: crowd_twin\\models\\layers.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\crowd_twin\\models\\layers.py"
+    },
+    {
+      "check": "source snapshot: crowd_twin\\models\\layers.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\crowd_twin\\models\\layers.py"
+    },
+    {
+      "check": "current source: crowd_twin\\models\\network.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\crowd_twin\\models\\network.py"
+    },
+    {
+      "check": "source snapshot: crowd_twin\\models\\network.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\crowd_twin\\models\\network.py"
+    },
+    {
+      "check": "current source: crowd_twin\\models\\perception.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\crowd_twin\\models\\perception.py"
+    },
+    {
+      "check": "source snapshot: crowd_twin\\models\\perception.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\crowd_twin\\models\\perception.py"
+    },
+    {
+      "check": "current source: crowd_twin\\models\\strfe.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\crowd_twin\\models\\strfe.py"
+    },
+    {
+      "check": "source snapshot: crowd_twin\\models\\strfe.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\crowd_twin\\models\\strfe.py"
+    },
+    {
+      "check": "current source: crowd_twin\\models\\__init__.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\crowd_twin\\models\\__init__.py"
+    },
+    {
+      "check": "source snapshot: crowd_twin\\models\\__init__.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\crowd_twin\\models\\__init__.py"
+    },
+    {
+      "check": "current source: crowd_twin\\venue.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\crowd_twin\\venue.py"
+    },
+    {
+      "check": "source snapshot: crowd_twin\\venue.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\crowd_twin\\venue.py"
+    },
+    {
+      "check": "current source: crowd_twin\\contracts.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\crowd_twin\\contracts.py"
+    },
+    {
+      "check": "source snapshot: crowd_twin\\contracts.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\crowd_twin\\contracts.py"
+    },
+    {
+      "check": "current source: crowd_twin\\data\\strfe.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\crowd_twin\\data\\strfe.py"
+    },
+    {
+      "check": "source snapshot: crowd_twin\\data\\strfe.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\crowd_twin\\data\\strfe.py"
+    },
+    {
+      "check": "current source: backend\\balanced_ddpf.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\backend\\balanced_ddpf.py"
+    },
+    {
+      "check": "source snapshot: backend\\balanced_ddpf.py",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\backend\\balanced_ddpf.py"
+    },
+    {
+      "check": "current source: configs\\venues\\dronecrowd_analysis_grid.json",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\configs\\venues\\dronecrowd_analysis_grid.json"
+    },
+    {
+      "check": "source snapshot: configs\\venues\\dronecrowd_analysis_grid.json",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\source\\configs\\venues\\dronecrowd_analysis_grid.json"
+    },
+    {
+      "check": "all six checkpoints sealed",
+      "pass": true,
+      "detail": "Three seeds, two stages"
+    },
+    {
+      "check": "checkpoint 23037/strfe",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\seed-23037\\strfe\\best.pt"
+    },
+    {
+      "check": "full training completed: 23037/strfe",
+      "pass": true,
+      "detail": "Completion record must match sealed best weights and frozen epoch range"
+    },
+    {
+      "check": "epoch history: 23037/strfe",
+      "pass": true,
+      "detail": "Contiguous saved epoch history must match training completion"
+    },
+    {
+      "check": "checkpoint 23037/graph",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\seed-23037\\graph\\best.pt"
+    },
+    {
+      "check": "full training completed: 23037/graph",
+      "pass": true,
+      "detail": "Completion record must match sealed best weights and frozen epoch range"
+    },
+    {
+      "check": "epoch history: 23037/graph",
+      "pass": true,
+      "detail": "Contiguous saved epoch history must match training completion"
+    },
+    {
+      "check": "checkpoint 23038/strfe",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\seed-23038\\strfe\\best.pt"
+    },
+    {
+      "check": "full training completed: 23038/strfe",
+      "pass": true,
+      "detail": "Completion record must match sealed best weights and frozen epoch range"
+    },
+    {
+      "check": "epoch history: 23038/strfe",
+      "pass": true,
+      "detail": "Contiguous saved epoch history must match training completion"
+    },
+    {
+      "check": "checkpoint 23038/graph",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\seed-23038\\graph\\best.pt"
+    },
+    {
+      "check": "full training completed: 23038/graph",
+      "pass": true,
+      "detail": "Completion record must match sealed best weights and frozen epoch range"
+    },
+    {
+      "check": "epoch history: 23038/graph",
+      "pass": true,
+      "detail": "Contiguous saved epoch history must match training completion"
+    },
+    {
+      "check": "checkpoint 23039/strfe",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\seed-23039\\strfe\\best.pt"
+    },
+    {
+      "check": "full training completed: 23039/strfe",
+      "pass": true,
+      "detail": "Completion record must match sealed best weights and frozen epoch range"
+    },
+    {
+      "check": "epoch history: 23039/strfe",
+      "pass": true,
+      "detail": "Contiguous saved epoch history must match training completion"
+    },
+    {
+      "check": "checkpoint 23039/graph",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\seed-23039\\graph\\best.pt"
+    },
+    {
+      "check": "full training completed: 23039/graph",
+      "pass": true,
+      "detail": "Completion record must match sealed best weights and frozen epoch range"
+    },
+    {
+      "check": "epoch history: 23039/graph",
+      "pass": true,
+      "detail": "Contiguous saved epoch history must match training completion"
+    },
+    {
+      "check": "sealed protocol",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\protocol.json"
+    },
+    {
+      "check": "sealed splits",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\split-manifest.json"
+    },
+    {
+      "check": "report",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\REPORT.md"
+    },
+    {
+      "check": "required evaluation artifacts",
+      "pass": true,
+      "detail": "Metrics, intervals, failures, strata and decision must be hashed"
+    },
+    {
+      "check": "all test prediction artifacts",
+      "pass": true,
+      "detail": "22 sequences times three seeds"
+    },
+    {
+      "check": "artifact: evaluation\\comparisons-and-ci.csv",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\comparisons-and-ci.csv"
+    },
+    {
+      "check": "artifact: evaluation\\comparisons-and-ci.json",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\comparisons-and-ci.json"
+    },
+    {
+      "check": "artifact: evaluation\\count-comparison.png",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\count-comparison.png"
+    },
+    {
+      "check": "artifact: evaluation\\evaluation_started.json",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\evaluation_started.json"
+    },
+    {
+      "check": "artifact: evaluation\\failure-cases.csv",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\failure-cases.csv"
+    },
+    {
+      "check": "artifact: evaluation\\failure-cases.json",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\failure-cases.json"
+    },
+    {
+      "check": "artifact: evaluation\\gate-decision.json",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\gate-decision.json"
+    },
+    {
+      "check": "artifact: evaluation\\paired-scene-deltas.csv",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\paired-scene-deltas.csv"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-007.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-007.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-008.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-008.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-016.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-016.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-020.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-020.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-022.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-022.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-029.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-029.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-031.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-031.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-034.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-034.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-054.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-054.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-060.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-060.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-065.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-065.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-073.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-073.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-076.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-076.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-085.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-085.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-087.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-087.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-089.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-089.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-095.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-095.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-096.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-096.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-101.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-101.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-106.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-106.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-108.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-108.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23037-112.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23037-112.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-007.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-007.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-008.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-008.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-016.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-016.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-020.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-020.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-022.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-022.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-029.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-029.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-031.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-031.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-034.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-034.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-054.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-054.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-060.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-060.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-065.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-065.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-073.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-073.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-076.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-076.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-085.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-085.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-087.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-087.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-089.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-089.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-095.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-095.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-096.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-096.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-101.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-101.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-106.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-106.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-108.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-108.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23038-112.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23038-112.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-007.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-007.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-008.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-008.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-016.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-016.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-020.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-020.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-022.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-022.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-029.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-029.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-031.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-031.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-034.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-034.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-054.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-054.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-060.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-060.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-065.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-065.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-073.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-073.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-076.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-076.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-085.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-085.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-087.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-087.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-089.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-089.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-095.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-095.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-096.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-096.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-101.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-101.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-106.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-106.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-108.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-108.npz"
+    },
+    {
+      "check": "artifact: evaluation\\predictions-23039-112.npz",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\predictions-23039-112.npz"
+    },
+    {
+      "check": "artifact: evaluation\\scene-horizon-metrics.csv",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\scene-horizon-metrics.csv"
+    },
+    {
+      "check": "artifact: evaluation\\scene-horizon-metrics.json",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\scene-horizon-metrics.json"
+    },
+    {
+      "check": "artifact: evaluation\\strata.csv",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\strata.csv"
+    },
+    {
+      "check": "artifact: evaluation\\strata.json",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\evaluation\\strata.json"
+    },
+    {
+      "check": "decision checkpoint seal",
+      "pass": true,
+      "detail": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\evidence-20260907\\CHECKPOINTS_SEALED.json"
+    },
+    {
+      "check": "consistent completion decision",
+      "pass": true,
+      "detail": "Completion and gate records must agree"
+    }
+  ]
+}

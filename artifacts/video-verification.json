@@ -1,0 +1,584 @@
+{
+  "run_id": "690ec3ba4410450cbf27f4e4c6db99c3",
+  "status": "completed",
+  "result": {
+    "sample_count": 4,
+    "decoded_frames": 4,
+    "processed_seconds": 3.0,
+    "wall_seconds": 9.570931700000074,
+    "models": {
+      "ready": true,
+      "device": "cuda",
+      "ddpf": {
+        "kind": "user_supplied_balanced_ddpf",
+        "sha256": "56b626fd1ffaf40df604f584afa57ce1d3e6ed891716c98a043c770add7dc127",
+        "datasets": [
+          "ShanghaiTech Part B (training.py configuration; not independently re-evaluated)"
+        ],
+        "image_size": [
+          512,
+          512
+        ]
+      },
+      "temporal": {
+        "ready": false,
+        "error": "Compatible STRFE/graph weights must be trained against the supplied 256-channel DDPF features. Persistence forecasts are available.",
+        "venue_id": null,
+        "unit": "normalized_frame_steps",
+        "sha256": null,
+        "graph_sha256": null
+      },
+      "verified_at": 1788705079.5008833
+    },
+    "venue_version": 1,
+    "quality_note": "Camera motion and out-of-domain imagery can reduce accuracy; image motion is not calibrated physical speed."
+  },
+  "timeline": {
+    "items": [
+      {
+        "index": 0,
+        "timestamp": 0.0,
+        "count": 22.05493927001953,
+        "mapped_count": 22.054940044879913,
+        "unmapped_count": 0,
+        "padding_count_excluded": 3.7236366271972656,
+        "zones": [
+          {
+            "id": "Z01",
+            "count": 3.0183706283569336,
+            "density": null,
+            "velocity": null,
+            "direction": null,
+            "acceleration": null,
+            "occupancy_ratio": 0.030183706283569336,
+            "pressure": null
+          },
+          {
+            "id": "Z02",
+            "count": 0.42156392335891724,
+            "density": null,
+            "velocity": null,
+            "direction": null,
+            "acceleration": null,
+            "occupancy_ratio": 0.0042156392335891725,
+            "pressure": null
+          },
+          {
+            "id": "Z03",
+            "count": 0.7129753828048706,
+            "density": null,
+            "velocity": null,
+            "direction": null,
+            "acceleration": null,
+            "occupancy_ratio": 0.007129753828048706,
+            "pressure": null
+          },
+          {
+            "id": "Z04",
+            "count": 1.946083903312683,
+            "density": null,
+            "velocity": null,
+            "direction": null,
+            "acceleration": null,
+            "occupancy_ratio": 0.019460839033126832,
+            "pressure": null
+          },
+          {
+            "id": "Z05",
+            "count": 0.45137202739715576,
+            "density": null,
+            "velocity": null,
+            "direction": null,
+            "acceleration": null,
+            "occupancy_ratio": 0.004513720273971558,
+            "pressure": null
+          },
+          {
+            "id": "Z06",
+            "count": 4.434568405151367,
+            "density": null,
+            "velocity": null,
+            "direction": null,
+            "acceleration": null,
+            "occupancy_ratio": 0.04434568405151367,
+            "pressure": null
+          },
+          {
+            "id": "Z07",
+            "count": 2.2551655769348145,
+            "density": null,
+            "velocity": null,
+            "direction": null,
+            "acceleration": null,
+            "occupancy_ratio": 0.022551655769348145,
+            "pressure": null
+          },
+          {
+            "id": "Z08",
+            "count": 0.8896955251693726,
+            "density": null,
+            "velocity": null,
+            "direction": null,
+            "acceleration": null,
+            "occupancy_ratio": 0.008896955251693726,
+            "pressure": null
+          },
+          {
+            "id": "Z09",
+            "count": 7.925144672393799,
+            "density": null,
+            "velocity": null,
+            "direction": null,
+            "acceleration": null,
+            "occupancy_ratio": 0.07925144672393798,
+            "pressure": null
+          }
+        ],
+        "heatmap_scale": "per-frame relative intensity",
+        "forecast_method": "persistence_baseline",
+        "learned_status": "Custom venue: persistence baseline; compatible training required",
+        "quality": [
+          "Motion unavailable: initial frame or scene cut"
+        ],
+        "evidence": "ddpf_video_estimate",
+        "units": {
+          "count": "estimated people",
+          "velocity": "model-input pixels / second",
+          "acceleration": "model-input pixels / second\u00b2",
+          "density": "people / m\u00b2 only when calibrated",
+          "pressure": "ordinal proxy / 100"
+        },
+        "latency_ms": 2661.8906999997307,
+        "frame_url": "/api/runs/690ec3ba4410450cbf27f4e4c6db99c3/frames/0.jpg"
+      },
+      {
+        "index": 1,
+        "timestamp": 1.0,
+        "count": 23.463027954101562,
+        "mapped_count": 23.463027596473694,
+        "unmapped_count": 3.5762786865234375e-07,
+        "padding_count_excluded": 3.5784339904785156,
+        "zones": [
+          {
+            "id": "Z01",
+            "count": 3.438788414001465,
+            "density": null,
+            "velocity": 0.05354434996843338,
+            "direction": [
+              -0.015847133472561836,
+              -0.016773585230112076
+            ],
+            "acceleration": null,
+            "occupancy_ratio": 0.034387884140014646,
+            "pressure": null
+          },
+          {
+            "id": "Z02",
+            "count": 0.4416045844554901,
+            "density": null,
+            "velocity": 0.09828227758407593,
+            "direction": [
+              -0.008427990600466728,
+              -0.051738638430833817
+            ],
+            "acceleration": null,
+            "occupancy_ratio": 0.004416045844554901,
+            "pressure": null
+          },
+          {
+            "id": "Z03",
+            "count": 0.6343480348587036,
+            "density": null,
+            "velocity": 0.11824335902929306,
+            "direction": [
+              -0.015261267311871052,
+              -0.0467134565114975
+            ],
+            "acceleration": null,
+            "occupancy_ratio": 0.006343480348587036,
+            "pressure": null
+          },
+          {
+            "id": "Z04",
+            "count": 2.166541576385498,
+            "density": null,
+            "velocity": 0.044274941086769104,
+            "direction": [
+              -0.00475066713988781,
+              -0.005319848190993071
+            ],
+            "acceleration": null,
+            "occupancy_ratio": 0.02166541576385498,
+            "pressure": null
+          },
+          {
+            "id": "Z05",
+            "count": 0.4282727539539337,
+            "density": null,
+            "velocity": 0.06298304349184036,
+            "direction": [
+              0.00514645641669631,
+              -0.007097278721630573
+            ],
+            "acceleration": null,
+            "occupancy_ratio": 0.004282727539539337,
+            "pressure": null
+          },
+          {
+            "id": "Z06",
+            "count": 4.5897369384765625,
+            "density": null,
+            "velocity": 0.08804114162921906,
+            "direction": [
+              -0.0038842451758682728,
+              -0.050466328859329224
+            ],
+            "acceleration": null,
+            "occupancy_ratio": 0.04589736938476562,
+            "pressure": null
+          },
+          {
+            "id": "Z07",
+            "count": 2.1568026542663574,
+            "density": null,
+            "velocity": 0.04379577189683914,
+            "direction": [
+              -0.0003189069975633174,
+              -0.0074621750973165035
+            ],
+            "acceleration": null,
+            "occupancy_ratio": 0.021568026542663574,
+            "pressure": null
+          },
+          {
+            "id": "Z08",
+            "count": 1.172114372253418,
+            "density": null,
+            "velocity": 0.09426619112491608,
+            "direction": [
+              0.006768143270164728,
+              -0.03003736585378647
+            ],
+            "acceleration": null,
+            "occupancy_ratio": 0.01172114372253418,
+            "pressure": null
+          },
+          {
+            "id": "Z09",
+            "count": 8.434818267822266,
+            "density": null,
+            "velocity": 0.09279315173625946,
+            "direction": [
+              -0.004313270095735788,
+              -0.07506342977285385
+            ],
+            "acceleration": null,
+            "occupancy_ratio": 0.08434818267822265,
+            "pressure": null
+          }
+        ],
+        "heatmap_scale": "per-frame relative intensity",
+        "forecast_method": "persistence_baseline",
+        "learned_status": "Custom venue: persistence baseline; compatible training required",
+        "quality": [],
+        "evidence": "ddpf_video_estimate",
+        "units": {
+          "count": "estimated people",
+          "velocity": "model-input pixels / second",
+          "acceleration": "model-input pixels / second\u00b2",
+          "density": "people / m\u00b2 only when calibrated",
+          "pressure": "ordinal proxy / 100"
+        },
+        "latency_ms": 2184.382899999946,
+        "frame_url": "/api/runs/690ec3ba4410450cbf27f4e4c6db99c3/frames/1.jpg"
+      },
+      {
+        "index": 2,
+        "timestamp": 2.0,
+        "count": 23.28622055053711,
+        "mapped_count": 23.28621941804886,
+        "unmapped_count": 1.1324882507324219e-06,
+        "padding_count_excluded": 3.515470504760742,
+        "zones": [
+          {
+            "id": "Z01",
+            "count": 3.3623814582824707,
+            "density": null,
+            "velocity": 0.05355639383196831,
+            "direction": [
+              -0.00817798636853695,
+              -0.04508936405181885
+            ],
+            "acceleration": 1.2043863534927368e-05,
+            "occupancy_ratio": 0.03362381458282471,
+            "pressure": null
+          },
+          {
+            "id": "Z02",
+            "count": 0.4575827717781067,
+            "density": null,
+            "velocity": 0.08287324011325836,
+            "direction": [
+              -0.007277824450284243,
+              -0.06266537308692932
+            ],
+            "acceleration": -0.015409037470817566,
+            "occupancy_ratio": 0.0045758277177810665,
+            "pressure": null
+          },
+          {
+            "id": "Z03",
+            "count": 0.5948095917701721,
+            "density": null,
+            "velocity": 0.09269531071186066,
+            "direction": [
+              -0.019978472962975502,
+              -0.05599714815616608
+            ],
+            "acceleration": -0.025548048317432404,
+            "occupancy_ratio": 0.0059480959177017215,
+            "pressure": null
+          },
+          {
+            "id": "Z04",
+            "count": 2.631382942199707,
+            "density": null,
+            "velocity": 0.06971989572048187,
+            "direction": [
+              -0.00587130431085825,
+              -0.03743208572268486
+            ],
+            "acceleration": 0.02544495463371277,
+            "occupancy_ratio": 0.02631382942199707,
+            "pressure": null
+          },
+          {
+            "id": "Z05",
+            "count": 0.46556001901626587,
+            "density": null,
+            "velocity": 0.09818921983242035,
+            "direction": [
+              0.001751108793541789,
+              -0.07424520701169968
+            ],
+            "acceleration": 0.03520617634057999,
+            "occupancy_ratio": 0.004655600190162658,
+            "pressure": null
+          },
+          {
+            "id": "Z06",
+            "count": 4.740468502044678,
+            "density": null,
+            "velocity": 0.09790291637182236,
+            "direction": [
+              -0.011246264912188053,
+              -0.07876092940568924
+            ],
+            "acceleration": 0.009861774742603302,
+            "occupancy_ratio": 0.04740468502044678,
+            "pressure": null
+          },
+          {
+            "id": "Z07",
+            "count": 2.145829200744629,
+            "density": null,
+            "velocity": 0.07343580573797226,
+            "direction": [
+              -0.0006154174916446209,
+              -0.06799711287021637
+            ],
+            "acceleration": 0.029640033841133118,
+            "occupancy_ratio": 0.02145829200744629,
+            "pressure": null
+          },
+          {
+            "id": "Z08",
+            "count": 1.1281808614730835,
+            "density": null,
+            "velocity": 0.09039297699928284,
+            "direction": [
+              -0.0008593819802626967,
+              -0.04632210358977318
+            ],
+            "acceleration": -0.0038732141256332397,
+            "occupancy_ratio": 0.011281808614730835,
+            "pressure": null
+          },
+          {
+            "id": "Z09",
+            "count": 7.760024070739746,
+            "density": null,
+            "velocity": 0.08721923828125,
+            "direction": [
+              -0.006516059394925833,
+              -0.07894498854875565
+            ],
+            "acceleration": -0.0055739134550094604,
+            "occupancy_ratio": 0.07760024070739746,
+            "pressure": null
+          }
+        ],
+        "heatmap_scale": "per-frame relative intensity",
+        "forecast_method": "persistence_baseline",
+        "learned_status": "Custom venue: persistence baseline; compatible training required",
+        "quality": [],
+        "evidence": "ddpf_video_estimate",
+        "units": {
+          "count": "estimated people",
+          "velocity": "model-input pixels / second",
+          "acceleration": "model-input pixels / second\u00b2",
+          "density": "people / m\u00b2 only when calibrated",
+          "pressure": "ordinal proxy / 100"
+        },
+        "latency_ms": 2152.8238000000783,
+        "frame_url": "/api/runs/690ec3ba4410450cbf27f4e4c6db99c3/frames/2.jpg"
+      },
+      {
+        "index": 3,
+        "timestamp": 3.0,
+        "count": 22.43911361694336,
+        "mapped_count": 22.439112931489944,
+        "unmapped_count": 6.854534149169922e-07,
+        "padding_count_excluded": 3.5401229858398438,
+        "zones": [
+          {
+            "id": "Z01",
+            "count": 3.336846351623535,
+            "density": null,
+            "velocity": 0.06144753471016884,
+            "direction": [
+              -0.01759505458176136,
+              -0.051713891327381134
+            ],
+            "acceleration": 0.007891140878200531,
+            "occupancy_ratio": 0.033368463516235354,
+            "pressure": null
+          },
+          {
+            "id": "Z02",
+            "count": 0.4664323031902313,
+            "density": null,
+            "velocity": 0.08674472570419312,
+            "direction": [
+              -0.0177776962518692,
+              -0.06230182200670242
+            ],
+            "acceleration": 0.0038714855909347534,
+            "occupancy_ratio": 0.004664323031902313,
+            "pressure": null
+          },
+          {
+            "id": "Z03",
+            "count": 0.5734033584594727,
+            "density": null,
+            "velocity": 0.08894829452037811,
+            "direction": [
+              -0.02041039988398552,
+              -0.042227160185575485
+            ],
+            "acceleration": -0.003747016191482544,
+            "occupancy_ratio": 0.005734033584594726,
+            "pressure": null
+          },
+          {
+            "id": "Z04",
+            "count": 2.736114025115967,
+            "density": null,
+            "velocity": 0.050029970705509186,
+            "direction": [
+              -0.012686190195381641,
+              -0.03199484199285507
+            ],
+            "acceleration": -0.019689925014972687,
+            "occupancy_ratio": 0.02736114025115967,
+            "pressure": null
+          },
+          {
+            "id": "Z05",
+            "count": 0.4373171925544739,
+            "density": null,
+            "velocity": 0.06571535766124725,
+            "direction": [
+              -0.0035718244034796953,
+              -0.03955621272325516
+            ],
+            "acceleration": -0.032473862171173096,
+            "occupancy_ratio": 0.004373171925544738,
+            "pressure": null
+          },
+          {
+            "id": "Z06",
+            "count": 4.488709926605225,
+            "density": null,
+            "velocity": 0.09446239471435547,
+            "direction": [
+              -0.00905435811728239,
+              -0.06608355790376663
+            ],
+            "acceleration": -0.0034405216574668884,
+            "occupancy_ratio": 0.04488709926605225,
+            "pressure": null
+          },
+          {
+            "id": "Z07",
+            "count": 1.8909578323364258,
+            "density": null,
+            "velocity": 0.02564440853893757,
+            "direction": [
+              0.0002808815333992243,
+              -0.019175535067915916
+            ],
+            "acceleration": -0.04779139719903469,
+            "occupancy_ratio": 0.01890957832336426,
+            "pressure": null
+          },
+          {
+            "id": "Z08",
+            "count": 1.0555565357208252,
+            "density": null,
+            "velocity": 0.07068850845098495,
+            "direction": [
+              -0.002547298092395067,
+              -0.03799242153763771
+            ],
+            "acceleration": -0.019704468548297882,
+            "occupancy_ratio": 0.010555565357208252,
+            "pressure": null
+          },
+          {
+            "id": "Z09",
+            "count": 7.453775405883789,
+            "density": null,
+            "velocity": 0.09081678092479706,
+            "direction": [
+              -0.01389603316783905,
+              -0.08383793383836746
+            ],
+            "acceleration": 0.003597542643547058,
+            "occupancy_ratio": 0.07453775405883789,
+            "pressure": null
+          }
+        ],
+        "heatmap_scale": "per-frame relative intensity",
+        "forecast_method": "persistence_baseline",
+        "learned_status": "Custom venue: persistence baseline; compatible training required",
+        "quality": [],
+        "evidence": "ddpf_video_estimate",
+        "units": {
+          "count": "estimated people",
+          "velocity": "model-input pixels / second",
+          "acceleration": "model-input pixels / second\u00b2",
+          "density": "people / m\u00b2 only when calibrated",
+          "pressure": "ordinal proxy / 100"
+        },
+        "latency_ms": 2162.5096000002486,
+        "frame_url": "/api/runs/690ec3ba4410450cbf27f4e4c6db99c3/frames/3.jpg"
+      }
+    ],
+    "total": 4,
+    "offset": 0
+  },
+  "export_bytes": 28053,
+  "source": "C:\\Users\\abhij\\Documents\\Beyond Surveillance\\data\\raw\\DroneCrowd\\val_data\\images",
+  "scope": "Four real dataset images encoded as a test video; transport and inference verification, not an accuracy evaluation."
+}

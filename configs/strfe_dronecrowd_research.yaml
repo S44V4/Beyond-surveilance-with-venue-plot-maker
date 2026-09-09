@@ -1,0 +1,84 @@
+seed: 23037
+experiment_name: strfe_dronecrowd_research
+output_dir: outputs/strfe_dronecrowd_research
+
+architecture:
+  version: cached-ddpf-strfe-v2
+  integration_schema_version: "1.0"
+  venue_graph: configs/venues/dronecrowd_analysis_grid.json
+
+data:
+  manifest: outputs/dronecrowd_research_cache/manifest.json
+  risk_calibration: outputs/dronecrowd_research_cache/risk_calibration.json
+  temporal_unit: normalized_frame_steps
+  context_frames: 8
+  num_workers: 0
+  augmentation:
+    horizontal_flip_probability: 0.0
+
+sensors:
+  features: []
+  normalization: configs/sensor_normalization.yaml
+
+model:
+  input_channels: 16
+  feature_dim: 64
+  temporal_layers: 1
+  dropout: 0.10
+  horizons_seconds: [5, 15, 30]
+  use_mamba: false
+  components:
+    motion: true
+    short_term: true
+    long_term: true
+    sensors: false
+
+training:
+  epochs: 20
+  batch_size: 16
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  gradient_clip: 1.0
+  mixed_precision: true
+  early_stopping_patience: 6
+  device: null
+  resume: null
+
+evaluation:
+  risk_threshold: 0.5
+  recurrent_baseline_epochs: 5
+  run_ablations: true
+  risk_class_quantiles: [0.25, 0.50, 0.75]
+
+graph_reasoner:
+  model:
+    hidden_dim: 64
+    static_feature_dim: 5
+    attention_heads: 4
+    layers: 2
+    dropout: 0.10
+    risk_class_labels: [stable, watch, high, critical]
+  training:
+    epochs: 30
+    batch_size: 8
+    learning_rate: 0.0005
+    weight_decay: 0.0001
+    gradient_clip: 1.0
+    early_stopping_patience: 6
+
+digital_twin:
+  model:
+    hidden_dim: 128
+    attention_heads: 4
+  training:
+    epochs: 60
+    batch_size: 64
+    stride: 3
+    learning_rate: 0.0005
+    weight_decay: 0.0001
+    gradient_clip: 1.0
+    early_stopping_patience: 8
+
+inference:
+  sample_fps: 1.0
+  max_frames: 300

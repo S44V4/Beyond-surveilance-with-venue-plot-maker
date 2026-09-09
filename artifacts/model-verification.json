@@ -1,0 +1,25 @@
+{
+  "checkpoint_sha256": "56b626fd1ffaf40df604f584afa57ce1d3e6ed891716c98a043c770add7dc127",
+  "strict_load": true,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce GTX 1650 with Max-Q Design",
+  "finite": true,
+  "count": 28.418834686279297,
+  "padded_count": 31.748748779296875,
+  "padding_excluded": 3.3299102783203125,
+  "head_locations": 44,
+  "density_shape": [
+    1,
+    1,
+    32,
+    32
+  ],
+  "feature_shape": [
+    1,
+    256,
+    32,
+    32
+  ],
+  "seconds": 3.256616899999699,
+  "note": "Inference smoke test on one image; not an accuracy evaluation."
+}

@@ -1,0 +1,41 @@
+{
+  "ddpf_sha256": "56b626fd1ffaf40df604f584afa57ce1d3e6ed891716c98a043c770add7dc127",
+  "strfe": {
+    "checkpoint": "C:\\Users\\abhij\\Documents\\ChatGPT\\Beyond Surveillance\\outputs\\balanced-smoke\\strfe\\strfe_best.pt",
+    "best_validation_loss": 0.067035307486852,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.14271405835946402,
+        "validation_loss": 0.08770717680454254,
+        "horizon_train_loss": [
+          0.0736659864584605,
+          0.07729208096861839,
+          0.07132881258924802
+        ],
+        "learning_rate": 0.0005
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.07501604159673055,
+        "validation_loss": 0.067035307486852,
+        "horizon_train_loss": [
+          0.02531759316722552,
+          0.027874565372864406,
+          0.02524695359170437
+        ],
+        "learning_rate": 0.0005
+      }
+    ]
+  },
+  "leakage_audit": {
+    "records": 3,
+    "sequence_overlap": [],
+    "duplicate_cache_across_splits": [],
+    "missing_cache": [],
+    "clean": true
+  },
+  "engineering_smoke": true,
+  "deployment_approved": false,
+  "scope": "Count supervision uses manual head annotations. Pressure uses derived ordinal proxies. Physical timing and causal interventions are not validated. Smoke mode verifies training execution only."
+}

@@ -1,0 +1,6 @@
+temperature: {mean: 25.0, std: 8.0, unit: celsius}
+co2: {mean: 600.0, std: 400.0, unit: ppm}
+smoke: {mean: 0.0, std: 1.0, unit: sensor_native}
+humidity: {mean: 50.0, std: 20.0, unit: percent}
+tvoc: {mean: 100.0, std: 150.0, unit: ppb}
+air_quality: {mean: 50.0, std: 40.0, unit: index}

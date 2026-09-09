@@ -1,0 +1,24 @@
+{
+  "source": "best_balanced_ddpfnet.pth.zip",
+  "source_sha256": "c002c0f3928ac9a64cf8e0601bcce3254645d236a090036df171946806ad02d1",
+  "inference_sha256": "56b626fd1ffaf40df604f584afa57ce1d3e6ed891716c98a043c770add7dc127",
+  "epoch": 115,
+  "architecture": "DDPFNetLastHope / supplied training.py cells 6\u20139",
+  "normalization": "RGB/255, ImageNet mean/std",
+  "input": 512,
+  "density_scale": 100,
+  "offset": "0.5*tanh; signed",
+  "config": {
+    "BATCH_SIZE": 1,
+    "OUTPUT_SIZE": 512,
+    "EARLY_STOPPING_PATIENCE": 40,
+    "HEATMAP_WEIGHT": 8.0,
+    "MIN_SIGMA": 4.0,
+    "MAX_SIGMA": 16.0,
+    "HEATMAP_MIN_SIGMA": 2.0,
+    "HEATMAP_MAX_SIGMA": 8.0,
+    "MIN_DISTANCE": 4,
+    "BORDER_MASK": 0
+  },
+  "checkpoint_metrics_note": "Stored training metrics are not independent verification."
+}

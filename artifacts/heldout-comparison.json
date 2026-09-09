@@ -1,0 +1,154 @@
+{
+  "metrics": {
+    "model_zone_mae": 23.31574002945865,
+    "persistence_zone_mae": 24.071011225382488,
+    "model_total_error": 204.24339621464412,
+    "persistence_total_error": 182.99274190266928
+  },
+  "rows": [
+    {
+      "scene": "011",
+      "frame": 3,
+      "horizon_steps": 1,
+      "model_zone_mae": 23.36768177482817,
+      "persistence_zone_mae": 23.95362091064453,
+      "model_total_error": 204.71934992074966,
+      "persistence_total_error": 183.7978973388672
+    },
+    {
+      "scene": "011",
+      "frame": 3,
+      "horizon_steps": 2,
+      "model_zone_mae": 23.367435349358452,
+      "persistence_zone_mae": 23.95362091064453,
+      "model_total_error": 204.69951629638672,
+      "persistence_total_error": 183.7978973388672
+    },
+    {
+      "scene": "011",
+      "frame": 3,
+      "horizon_steps": 4,
+      "model_zone_mae": 23.36754082971149,
+      "persistence_zone_mae": 23.95362091064453,
+      "model_total_error": 204.70827335119247,
+      "persistence_total_error": 183.7978973388672
+    },
+    {
+      "scene": "011",
+      "frame": 4,
+      "horizon_steps": 1,
+      "model_zone_mae": 23.367720153596665,
+      "persistence_zone_mae": 23.825878143310547,
+      "model_total_error": 204.720494389534,
+      "persistence_total_error": 184.3040771484375
+    },
+    {
+      "scene": "011",
+      "frame": 4,
+      "horizon_steps": 2,
+      "model_zone_mae": 23.367473516199325,
+      "persistence_zone_mae": 23.825878143310547,
+      "model_total_error": 204.70065635442734,
+      "persistence_total_error": 184.3040771484375
+    },
+    {
+      "scene": "011",
+      "frame": 4,
+      "horizon_steps": 4,
+      "model_zone_mae": 23.367578817738426,
+      "persistence_zone_mae": 23.825878143310547,
+      "model_total_error": 204.70939737558365,
+      "persistence_total_error": 184.3040771484375
+    },
+    {
+      "scene": "011",
+      "frame": 5,
+      "horizon_steps": 1,
+      "model_zone_mae": 23.367706464396583,
+      "persistence_zone_mae": 24.105724334716797,
+      "model_total_error": 204.72070389986038,
+      "persistence_total_error": 183.3876495361328
+    },
+    {
+      "scene": "011",
+      "frame": 5,
+      "horizon_steps": 2,
+      "model_zone_mae": 23.36746072769165,
+      "persistence_zone_mae": 24.105724334716797,
+      "model_total_error": 204.70085632801056,
+      "persistence_total_error": 183.3876495361328
+    },
+    {
+      "scene": "011",
+      "frame": 5,
+      "horizon_steps": 4,
+      "model_zone_mae": 23.367565049065483,
+      "persistence_zone_mae": 24.105724334716797,
+      "model_total_error": 204.70960223674774,
+      "persistence_total_error": 183.3876495361328
+    },
+    {
+      "scene": "011",
+      "frame": 6,
+      "horizon_steps": 1,
+      "model_zone_mae": 23.367754810386234,
+      "persistence_zone_mae": 24.34027099609375,
+      "model_total_error": 204.72028237581253,
+      "persistence_total_error": 182.99298095703125
+    },
+    {
+      "scene": "011",
+      "frame": 6,
+      "horizon_steps": 2,
+      "model_zone_mae": 23.367509775691563,
+      "persistence_zone_mae": 24.34027099609375,
+      "model_total_error": 204.70046210289001,
+      "persistence_total_error": 182.99298095703125
+    },
+    {
+      "scene": "011",
+      "frame": 6,
+      "horizon_steps": 4,
+      "model_zone_mae": 22.92316895723343,
+      "persistence_zone_mae": 23.89582633972168,
+      "model_total_error": 200.7092186808586,
+      "persistence_total_error": 178.99298095703125
+    },
+    {
+      "scene": "011",
+      "frame": 7,
+      "horizon_steps": 1,
+      "model_zone_mae": 23.367741584777832,
+      "persistence_zone_mae": 24.38882064819336,
+      "model_total_error": 204.72101974487305,
+      "persistence_total_error": 182.81443786621094
+    },
+    {
+      "scene": "011",
+      "frame": 7,
+      "horizon_steps": 2,
+      "model_zone_mae": 23.3674966428015,
+      "persistence_zone_mae": 24.38882064819336,
+      "model_total_error": 204.70118409395218,
+      "persistence_total_error": 182.81443786621094
+    },
+    {
+      "scene": "011",
+      "frame": 7,
+      "horizon_steps": 4,
+      "model_zone_mae": 23.034265988402897,
+      "persistence_zone_mae": 24.05548858642578,
+      "model_total_error": 201.7099260687828,
+      "persistence_total_error": 179.81443786621094
+    }
+  ],
+  "test_scenes": [
+    "011"
+  ],
+  "strfe_sha256": "3ce7ef7a783538d14b0e1f0fac5ec42c578b743c7b8eaa686db4ef2a4aa0cf22",
+  "graph_sha256": "d63da05d3b9e107bfdf732bf948354e8ed1dbddfce063e0db0d6af7420bac806",
+  "engineering_smoke": true,
+  "baseline": "Current DDPF estimates carried forward; no current or future manual counts are provided to the baseline.",
+  "units": "count errors in people; horizons in normalized frame steps",
+  "deployment_approved": false
+}

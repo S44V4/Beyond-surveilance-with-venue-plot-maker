@@ -1,0 +1,21 @@
+/* Generated from DESIGN.md by scripts/design-tokens.py. */
+:root {
+  --color-primary: #2456d6;
+  --color-ink: #182944;
+  --color-background: #f3f6fa;
+  --color-surface: #ffffff;
+  --color-muted: #627189;
+  --color-border: #dce3ed;
+  --color-success: #167552;
+  --color-warning: #a55b10;
+  --color-danger: #bd3449;
+  --color-accent: #df7637;
+  --radius-default: 10px;
+  --radius-sm: 6px;
+  --radius-lg: 16px;
+  --space-page: 28px;
+  --space-gap: 18px;
+  --font-display: Bahnschrift, "Arial Narrow", sans-serif;
+  --font-sans: "Segoe UI", Arial, sans-serif;
+  --font-mono: Consolas, monospace;
+}

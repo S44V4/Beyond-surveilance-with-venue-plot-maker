@@ -1,0 +1,25 @@
+{
+  "name": "beyond-surveillance-console",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b",
+    "preview": "vite preview --host 127.0.0.1 --port 5173 --strictPort",
+    "format": "prettier --write src vite.config.ts package.json DESIGN.md UX-CONTRACT.md",
+    "format:check": "prettier --check src vite.config.ts package.json DESIGN.md UX-CONTRACT.md"
+  },
+  "dependencies": {
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.3",
+    "@types/react-dom": "19.2.3",
+    "prettier": "^3.6.2",
+    "typescript": "5.9.3",
+    "vite": "8.2.1"
+  }
+}

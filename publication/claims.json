@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "data_constraint": "public datasets only",
+  "claims": [
+    {"id": "learned_superiority", "status": "pending_full_evaluation", "evidence": "Verified frozen study and gate-decision.json; outcome not yet available"},
+    {"id": "strong_methodological_novelty", "status": "not_established", "evidence": "Closest-method comparison plus independently supported mechanism ablations required"},
+    {"id": "cross_dataset_transfer", "status": "not_run", "evidence": "Untouched public external dataset with documented preprocessing and provenance required"},
+    {"id": "physical_location_generalization", "status": "not_established", "evidence": "Verified location groups and disjoint evaluation required"},
+    {"id": "calibrated_uncertainty", "status": "not_run", "evidence": "Independent calibration split and held-out coverage/width required"},
+    {"id": "real_pressure_or_emergency_prediction", "status": "unsupported_by_current_targets", "evidence": "Current target is a perception-derived proxy"},
+    {"id": "causal_gate_intervention_benefit", "status": "unsupported_by_current_data", "evidence": "Current scenario output is conditional simulation"},
+    {"id": "journal_submission_ready", "status": "not_ready", "evidence": "Complete experiments, contribution review, reproduction, declarations and author approval required"}
+  ]
+}
