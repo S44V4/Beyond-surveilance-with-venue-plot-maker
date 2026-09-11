@@ -1,0 +1,18 @@
+{
+  "epochs": 60,
+  "min_epochs": 15,
+  "patience": 10,
+  "context": 32,
+  "horizons": [5, 15, 30],
+  "stride": 5,
+  "dim": 64,
+  "dropout": 0.1,
+  "micro_batch": 8,
+  "accumulation": 4,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "checkpoint_steps": 20,
+  "precision": "auto",
+  "threads": 2,
+  "appearance_dropout": 0.1
+}
