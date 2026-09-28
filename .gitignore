@@ -14,3 +14,7 @@ artifacts/*.mp4
 vendor/ddpf/.git/
 outputs/
 *.tsbuildinfo
+*.pt
+*.pth
+Mall_Dataset/
+ShanghaiTech/

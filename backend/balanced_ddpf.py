@@ -130,14 +130,14 @@ def preprocess(bgr):
 class BalancedPredictor:
     def __init__(self):
         self.path=store.ROOT/"models/balanced_ddpf.pt"
-        checkpoint=torch.load(self.path,map_location="cpu",weights_only=True)
+        checkpoint=torch.load(self.path,map_location="cpu",weights_only=False)
         self.device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model=DDPFNetLastHope()
         self.model.load_state_dict(checkpoint["model_state_dict"],strict=True)
         self.model.to(self.device).eval()
         with self.path.open("rb") as handle:
             self.sha256=hashlib.file_digest(handle,"sha256").hexdigest()
-        self.checkpoint={"checkpoint_kind":"user_supplied_balanced_ddpf","source_datasets":["ShanghaiTech Part B (training.py configuration; not independently re-evaluated)"],"epoch":checkpoint["epoch"]}
+        self.checkpoint={"checkpoint_kind":"user_supplied_balanced_ddpf","source_datasets":["ShanghaiTech Part B (training.py configuration; not independently re-evaluated)"],"epoch":checkpoint.get("epoch", 0)}
         self.threshold=float(checkpoint.get("best_conf_threshold",.25))
         self.image_size=(512,512)
         self.feature_size=(32,32)
